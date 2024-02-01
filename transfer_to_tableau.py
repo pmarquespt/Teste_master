@@ -1,6 +1,10 @@
 import requests
 import pandas as pd
 
+# libraries to open image
+from PIL import Image
+from io import BytesIO
+
 # API: STATISTICS USAGE:
 
 url = 'https://opendata.emel.pt/cycling/gira/statistics/usage'
@@ -16,6 +20,7 @@ df_statistics = pd.DataFrame(statistics)
 df_statistics['tripStartDate'] = pd.to_datetime(df_statistics['tripStartDate']) 
 df_statistics = df_statistics.sort_values(by='tripStartDate', ignore_index=True)
 df_statistics['totalHoursPerDay'] = df_statistics['totalSecondsPerDay']/3600
+df_statistics['tripStartDate'] = df_statistics['tripStartDate'].astype('string')
 df_statistics.to_json('df_statistics.json', orient='records', lines=True)
 
 # API: BIKELANES: 
@@ -40,3 +45,15 @@ weather_df = pd.DataFrame(weather_data)
 lisbon_weather = weather_df[weather_df["globalIdLocal"] == 1110600]
 lisbon_weather['average_temp'] = (lisbon_weather["tMin"] + lisbon_weather["tMax"]) / 2
 lisbon_weather.to_json('lisbon_weather.json', orient='records', lines=True)
+
+# WEATHER: HISTORICO
+
+url = "https://api.ipma.pt/open-data/observation/climate/temperature-min/lisboa/mtnmn-1106-lisboa.csv"
+df_historico = pd.read_csv(url)
+df_historico.to_json('df_historico.json', orient='records', lines=True)
+
+
+# Carregar a imagem
+imagem = Image.open('loaded_image.jpg')
+# Mostrar a imagem
+imagem.show()
