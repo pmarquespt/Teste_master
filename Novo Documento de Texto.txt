@@ -1,0 +1,7 @@
+Quando você converte uma data em Python para JSON, as datas podem ser representadas como números, como o exemplo que você deu (1699056000000.00). Isso ocorre devido à forma como as datas são armazenadas e representadas em diferentes formatos.
+
+Ao converter uma data em Python para JSON, as datas são muitas vezes convertidas para o formato de tempo Unix, que representa o tempo como o número de milissegundos passados desde a meia-noite (UTC) do dia 1º de janeiro de 1970. Esse formato é comumente usado em sistemas informáticos para representar datas e horários de forma universal.
+
+Se você deseja que as datas sejam representadas de forma legível em JSON, você pode formatá-las antes de convertê-las para JSON utilizando o método strftime para formatar a data de acordo com o padrão desejado. Por exemplo, você pode formatar a data como uma string no formato ISO 8601 antes de convertê-la para JSON.
+
+Se precisar de exemplos de código ou de mais informações sobre como realizar essa formatação, por favor me avise!

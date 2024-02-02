@@ -1,4 +1,3 @@
-{"tripStartDate":"2023-02-01","totalSecondsPerDay":7264812,"userQtyUnique":4609,"avgTripByUserSeconds":1576.223041,"totalHoursPerDay":2018.0033333333}
 {"tripStartDate":"2023-02-02","totalSecondsPerDay":7096325,"userQtyUnique":4479,"avgTripByUserSeconds":1584.354766,"totalHoursPerDay":1971.2013888889}
 {"tripStartDate":"2023-02-03","totalSecondsPerDay":7605939,"userQtyUnique":4504,"avgTripByUserSeconds":1688.707593,"totalHoursPerDay":2112.7608333333}
 {"tripStartDate":"2023-02-04","totalSecondsPerDay":5966358,"userQtyUnique":3104,"avgTripByUserSeconds":1922.151417,"totalHoursPerDay":1657.3216666667}
@@ -332,3 +331,4 @@
 {"tripStartDate":"2023-12-29","totalSecondsPerDay":5013051,"userQtyUnique":2725,"avgTripByUserSeconds":1839.651743,"totalHoursPerDay":1392.5141666667}
 {"tripStartDate":"2023-12-30","totalSecondsPerDay":3451581,"userQtyUnique":1841,"avgTripByUserSeconds":1874.840304,"totalHoursPerDay":958.7725}
 {"tripStartDate":"2023-12-31","totalSecondsPerDay":2147140,"userQtyUnique":1311,"avgTripByUserSeconds":1637.787948,"totalHoursPerDay":596.4277777778}
+{"tripStartDate":"2024-01-01","totalSecondsPerDay":2875312,"userQtyUnique":1379,"avgTripByUserSeconds":2085.07034,"totalHoursPerDay":798.6977777778}
